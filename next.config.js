@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
-}
+  assetPrefix: isProd ? "/portfolio-next/" : "",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
