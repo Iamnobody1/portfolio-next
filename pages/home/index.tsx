@@ -25,7 +25,7 @@ export default function Home() {
                     </div>
                     <div className="border-t border-slate-200 my-10"></div>
                     <div className="flex">
-                        <div className="w-1/4">About me</div>
+                        <div className="w-1/4 font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500">About me</div>
                         <div className="w-3/4 space-y-6">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius numquam expedita quisquam aut eos quaerat accusantium repellendus exercitationem, enim aliquam.</p>
                             <div className="rounded-xl border border-slate-300 p-6">
@@ -46,7 +46,7 @@ export default function Home() {
                     </div>
                     <div className="border-t border-slate-300 my-10"></div>
                     <div className="flex">
-                        <div className="w-1/4">Skills</div>
+                        <div className="w-1/4 font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500">Skills</div>
                         <div className="w-3/4 space-y-6">
                             <div className="grid grid-cols-3 gap-6">
                                 <div className="border border-slate-300 rounded-xl">
@@ -102,7 +102,7 @@ export default function Home() {
                     </div>
                     <div className="border-t border-slate-300 my-10"></div>
                     <div className="flex">
-                        <div className="w-1/4">Experience</div>
+                        <div className="w-1/4 font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500">Experience</div>
                         <div className="w-3/4 space-y-6">
                             <div className="grid grid-cols-2 gap-6">
                                 <div className="border border-slate-300 rounded-xl">
@@ -178,7 +178,7 @@ export default function Home() {
                     </div>
                     <div className="border-t border-slate-300 my-10"></div>
                     <div className="flex">
-                        <div className="w-1/4">Education</div>
+                        <div className="w-1/4 font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500">Education</div>
                         <div className="w-3/4 space-y-6">
                             <div className="grid gap-6">
                                 <div className="border border-slate-300 rounded-xl">
@@ -214,7 +214,7 @@ export default function Home() {
                     </div>
                     <div className="border-t border-slate-300 my-10"></div>
                     <div className="flex">
-                        <div className="w-1/4">Certificate</div>
+                        <div className="w-1/4 font-bold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-500 to-rose-500">Certificate</div>
                         <div className="w-3/4 space-y-6">
                             <div className="grid gap-6">
                                 <div className="border border-slate-300 rounded-xl">
