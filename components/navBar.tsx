@@ -1,3 +1,13 @@
+import Link from 'next/link';
+
+const items = [
+    { name: 'About', section: 'aboutMe' },
+    { name: 'Skills', section: 'skills' },
+    { name: 'Experience', section: 'experience' },
+    { name: 'Education', section: 'education' },
+    { name: 'Certificates', section: 'certificates' },
+];
+
 export default function NavBar() {
     return (
         <>
@@ -18,21 +28,22 @@ export default function NavBar() {
                                     Home
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-700 md:p-0">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-700 md:p-0">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-700 md:p-0">
-                                    Contact
-                                </a>
-                            </li>
+                            {items.map((item, index) => {
+                                return (
+                                    <li key={index}>
+                                        <Link
+                                            href="/"
+                                            onClick={(e) => {
+                                                const section = document.getElementById(item.section);
+                                                e.preventDefault();
+                                                section && section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                            }}
+                                        >
+                                            <div className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-rose-700 md:p-0">{item.name}</div>
+                                        </Link>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
                 </div>
