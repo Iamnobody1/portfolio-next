@@ -11,7 +11,7 @@ const items = [
 export default function NavBar() {
     return (
         <>
-            <nav className="bg-white px-2 sm:px-4 py-2.5 border-b border-gray-200 mx-12 text-lg">
+            <nav className="bg-white w-full px-2 sm:px-4 py-2.5 border-b border-gray-200 text-lg fixed z-50">
                 <div className="max-w-container-lg flex flex-wrap items-center justify-between mx-auto">
                     <div className="flex md:order-2">
                         <button type="button" className="text-white bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg px-5 py-2.5 text-center mr-3 md:mr-0">
